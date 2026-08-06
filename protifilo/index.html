@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد فؤاد | مصمم جرافيك</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Cairo:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Glow Blobs for Modern Aesthetic -->
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+
+    <header>
+        <div class="logo-container">
+            <img src="avatar.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-item active" data-link="about">من أنا</a></li>
+                <li><a href="#experience" class="nav-item" data-link="experience">خبراتي</a></li>
+                <li><a href="#work" class="nav-item" data-link="work">أعمالي</a></li>
+                <li><a href="#contact" class="nav-item" data-link="contact">تواصل معي</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-btn">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">مصمم جرافيك محترف</span>
+                    <h1 class="hero-title">مرحباً، أنا <span class="highlight">محمد فؤاد</span></h1>
+                    <p class="hero-desc">
+                        مصمم جرافيك بخبرة أكثر من 5 سنوات في صناعة الهويات البصرية، تصاميم السوشيال ميديا المبتكرة،
+                        والفيديوهات الإعلانية القصيرة. أدمج بين الحس الفني وأدوات الذكاء الاصطناعي الحديثة لتقديم حلول
+                        بصرية فريدة تزيد من مبيعاتك وتبرز هويتك التجارية.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#work" class="btn btn-primary">عرض أعمالي</a>
+                        <a href="https://wa.me/967738437313" target="_blank" class="btn btn-secondary">تواصل سريع <i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-wrapper">
+                        <img src="me.png" alt="محمد فؤاد" class="hero-avatar">
+                        <div class="floating-badge badge-1">
+                            <span class="badge-number">5+</span>
+                            <span class="badge-text">سنوات خبرة</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <span class="badge-icon"><i class="fas fa-magic"></i></span>
+                            <span class="badge-text">تصميم إبداعي</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Services Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <span class="sub-title">ماذا أقدم؟</span>
+                <h2 class="section-title">خبراتي وخدماتي</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>الهويات البصرية</h3>
+                        <p>تصميم شعارات مبتكرة وكتيبات هوية كاملة (Brand Guidelines) تعزز حضور علامتك التجارية وتثبت في
+                            الأذهان.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h3>تصاميم السوشيال ميديا</h3>
+                        <p>إنشاء تصاميم لافتة لمنصات التواصل الاجتماعي تتناسب مع هوية شركتك وتساهم في زيادة التفاعل
+                            والمبيعات.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-video"></i></div>
+                        <h3>الموشن جرافيك والمونتاج</h3>
+                        <p>صناعة فيديوهات إعلانية قصيرة (Reels & Shorts) جذابة باستخدام أحدث تقنيات تحرير الفيديو
+                            وتأثيرات الحركة المميزة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work/Portfolio Section -->
+        <section id="work" class="work-section">
+            <div class="container">
+                <span class="sub-title">معرض الأعمال</span>
+                <h2 class="section-title">رؤية فنية تتحول لحقيقة</h2>
+
+                <div class="portfolio-controls">
+                    <!-- Dynamic filters can be placed here if needed -->
+                    <p class="portfolio-hint">اضغط على أي عمل لتكبيره وتصفحه</p>
+                </div>
+
+                <div class="work-gallery">
+                    <div class="gallery-grid" id="gallery-grid">
+                        <!-- Dynamic items injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <span class="sub-title">هل لديك مشروع؟</span>
+                <h2 class="section-title">دعنا نعمل معاً</h2>
+                <p class="contact-desc">أنا جاهز دائماً لتحويل أفكارك ورؤيتك إلى تصاميم ملموسة وناجحة. تواصل معي عبر أي
+                    من المنصات التالية:</p>
+
+                <div class="contact-cards">
+                    <a href="https://wa.me/967738437313" target="_blank" class="contact-card whatsapp">
+                        <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h3>واتساب</h3>
+                        <span class="card-detail">+967 738 437 313</span>
+                        <span class="card-action">راسلني الآن <i class="fas fa-chevron-left"></i></span>
+                    </a>
+
+                    <a href="https://www.behance.net/mohammeal-suba3" target="_blank" class="contact-card behance">
+                        <div class="card-icon"><i class="fab fa-behance"></i></div>
+                        <h3>بيهانس</h3>
+                        <span class="card-detail">mohammeal-suba3</span>
+                        <span class="card-action">مشاهدة المزيد <i class="fas fa-chevron-left"></i></span>
+                    </a>
+
+                    <a href="mailto:a771581381@gmail.com" class="contact-card email">
+                        <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>البريد الإلكتروني</h3>
+                        <span class="card-detail">a771581381@gmail.com</span>
+                        <span class="card-action">أرسل رسالة <i class="fas fa-chevron-left"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 محمد فؤاد | تصميم وتطوير إبداعي</p>
+    </footer>
+
+    <!-- Interactive Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" id="lightbox-close" aria-label="Close Lightbox">&times;</span>
+        <button class="lightbox-nav prev" id="lightbox-prev" aria-label="الصورة السابقة"><i
+                class="fas fa-chevron-right"></i></button>
+        <img class="lightbox-content" id="lightbox-img" alt="معاينة العمل">
+        <button class="lightbox-nav next" id="lightbox-next" aria-label="الصورة التالية"><i
+                class="fas fa-chevron-left"></i></button>
+        <div id="lightbox-counter" class="lightbox-counter">1 / 43</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

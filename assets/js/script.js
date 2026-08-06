@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             item.dataset.index = i;
 
             const img = document.createElement('img');
-            img.src = `work/${i}.png`;
+            img.src = `assets/work/${i}.png`;
             img.alt = `عمل إبداعي ${i}`;
             img.loading = 'lazy';
             
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lightboxImg.style.transform = 'scale(0.95)';
         
         setTimeout(() => {
-            lightboxImg.src = `work/${index}.png`;
+            lightboxImg.src = `assets/work/${index}.png`;
             lightboxCounter.textContent = `${index} / ${totalImages}`;
             
             lightboxImg.onload = () => {

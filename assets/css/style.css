@@ -1,23 +1,65 @@
 /* Fonts & Global Styles */
 @font-face {
-    font-family: 'Lyon Arabic';
-    src: url('font/Lyon Arabic Display Regular.ttf') format('truetype');
+    font-family: 'Monument Extended';
+    src: url('../fonts/MonumentExtended-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Lyon Arabic';
-    src: url('font/Lyon Arabic Display Medium.ttf') format('truetype');
-    font-weight: 500;
+    font-family: 'Monument Extended';
+    src: url('../fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+    font-weight: 700 900;
     font-style: normal;
+    font-display: swap;
+    unicode-range: U+0000-00FF, U+0100-017F, U+0180-024F, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-    font-family: 'Lyon Arabic';
-    src: url('font/Lyon Arabic Display Bold.ttf') format('truetype');
+    font-family: 'Zain';
+    src: url('../fonts/Zain-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+    font-family: 'Zain';
+    src: url('../fonts/Zain-Variable.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+    font-family: 'Zain';
+    src: url('../fonts/Zain-Variable.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+    font-family: 'Zain';
+    src: url('../fonts/Zain-Variable.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+    font-family: 'Zain';
+    src: url('../fonts/Zain-Variable.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF;
 }
 
 :root {
@@ -109,7 +151,7 @@
 body {
     background: var(--bg-gradient);
     color: var(--text-main);
-    font-family: 'Cairo', 'Lyon Arabic', sans-serif;
+    font-family: 'Monument Extended', 'Outfit', 'Zain', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     position: relative;
@@ -201,6 +243,7 @@ nav ul {
 }
 
 .nav-item {
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     text-decoration: none;
     color: var(--text-muted);
     font-size: 1rem;
@@ -262,6 +305,7 @@ section {
 }
 
 .sub-title {
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     display: block;
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -273,7 +317,7 @@ section {
 }
 
 .section-title {
-    font-family: 'Lyon Arabic', 'Cairo', sans-serif;
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
@@ -313,6 +357,7 @@ section {
 }
 
 .hero-badge {
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     align-self: flex-start;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -326,7 +371,7 @@ section {
 }
 
 .hero-title {
-    font-family: 'Lyon Arabic', 'Cairo', sans-serif;
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     font-size: 3.5rem;
     font-weight: 900;
     line-height: 1.2;
@@ -341,6 +386,7 @@ section {
 }
 
 .hero-desc {
+    font-family: 'Monument Extended', 'Outfit', 'Zain', sans-serif;
     color: var(--text-muted);
     font-size: 1.2rem;
     line-height: 1.8;
@@ -355,6 +401,7 @@ section {
 
 /* Buttons (Modern Pop/3D style) */
 .btn {
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     text-decoration: none;
     padding: 0.8rem 2.2rem;
     font-size: 1.05rem;
@@ -479,7 +526,7 @@ section {
 }
 
 .badge-number {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Monument Extended', 'Outfit', sans-serif;
     font-size: 1.8rem;
     font-weight: 850;
     color: var(--accent);
@@ -492,6 +539,7 @@ section {
 }
 
 .badge-text {
+    font-family: 'Zain', sans-serif;
     font-size: 0.85rem;
     font-weight: 700;
     color: var(--text-muted);
@@ -560,14 +608,16 @@ section {
 }
 
 .service-card h3 {
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     font-size: 1.4rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .service-card p {
+    font-family: 'Monument Extended', 'Outfit', 'Zain', sans-serif;
     color: var(--text-muted);
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 0;
 }
@@ -775,6 +825,7 @@ section {
 }
 
 .contact-card h3 {
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
@@ -783,7 +834,7 @@ section {
 .contact-card .card-detail {
     font-size: 1rem;
     color: var(--text-muted);
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Monument Extended', 'Outfit', sans-serif;
     margin-bottom: 1.5rem;
     transition: var(--transition);
 }
@@ -793,6 +844,7 @@ section {
 }
 
 .contact-card .card-action {
+    font-family: 'Monument Extended', 'Zain', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
     color: var(--accent);
@@ -813,6 +865,7 @@ section {
 
 /* Footer Section */
 footer {
+    font-family: 'Monument Extended', 'Outfit', 'Zain', sans-serif;
     text-align: center;
     padding: 3rem 0;
     border-top: 1px solid var(--border-color);
@@ -930,7 +983,7 @@ footer {
     color: #ffffff;
     padding: 0.5rem 1.2rem;
     border-radius: 50px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Monument Extended', 'Outfit', sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 1px;

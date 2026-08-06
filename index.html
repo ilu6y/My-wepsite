@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محمد فؤاد | مصمم جرافيك</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title data-i18n="page_title">Mohamed Fouad | Graphic Designer</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=8.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts for Modern Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Background Glow Blobs for Modern Aesthetic -->
-    <div class="glow-blob blob-1"></div>
-    <div class="glow-blob blob-2"></div>
-
+    <!-- Header Navigation -->
     <header>
         <div class="logo-container">
             <img src="assets/images/avatar.png" alt="Logo" class="logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#about" class="nav-item active" data-link="about">من أنا</a></li>
-                <li><a href="#experience" class="nav-item" data-link="experience">خبراتي</a></li>
-                <li><a href="#work" class="nav-item" data-link="work">أعمالي</a></li>
-                <li><a href="#contact" class="nav-item" data-link="contact">تواصل معي</a></li>
-                <li><button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-btn">🌙</button></li>
+                <li><a href="#about" class="nav-item active" data-link="about" data-i18n="nav_about">About</a></li>
+                <li><a href="#experience" class="nav-item" data-link="experience" data-i18n="nav_services">Services</a></li>
+                <li><a href="#work" class="nav-item" data-link="work" data-i18n="nav_work">Portfolio</a></li>
+                <li><a href="#contact" class="nav-item" data-link="contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-actions">
+            <button id="lang-toggle" class="lang-btn" aria-label="Toggle Language">
+                <i class="fas fa-globe"></i>
+                <span id="lang-btn-text">عربي</span>
+            </button>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-btn">🌙</button>
+        </div>
     </header>
 
     <main>
@@ -40,29 +37,30 @@
         <section id="about" class="hero">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <span class="hero-badge">مصمم جرافيك محترف</span>
-                    <h1 class="hero-title">مرحباً، أنا <span class="highlight">محمد فؤاد</span></h1>
-                    <p class="hero-desc">
-                        مصمم جرافيك بخبرة أكثر من 5 سنوات في صناعة الهويات البصرية، تصاميم السوشيال ميديا المبتكرة،
-                        والفيديوهات الإعلانية القصيرة. أدمج بين الحس الفني وأدوات الذكاء الاصطناعي الحديثة لتقديم حلول
-                        بصرية فريدة تزيد من مبيعاتك وتبرز هويتك التجارية.
+                    <span class="hero-badge" data-i18n="hero_badge">Professional Graphic Designer</span>
+                    <h1 class="hero-title">
+                        <span data-i18n="hero_title_pre">Hi, I'm </span><span class="highlight" data-i18n="hero_title_name">Mohamed Fouad</span>
+                    </h1>
+                    <p class="hero-desc" data-i18n="hero_desc">
+                        Graphic designer with 5+ years of expertise in crafting compelling brand identities, innovative social media creatives, and high-impact short promotional videos. Combining artistic intuition with modern AI tools to elevate your brand presence and drive real results.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#work" class="btn btn-primary">عرض أعمالي</a>
-                        <a href="https://wa.me/967738437313" target="_blank" class="btn btn-secondary">تواصل سريع <i
-                                class="fab fa-whatsapp"></i></a>
+                        <a href="#work" class="btn btn-primary" data-i18n="hero_btn_work">Explore Works</a>
+                        <a href="https://wa.me/967738437313" target="_blank" class="btn btn-secondary">
+                            <span data-i18n="hero_btn_contact">Quick Contact</span> <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="image-wrapper">
-                        <img src="assets/images/avatar.png" alt="محمد فؤاد" class="hero-avatar">
+                        <img src="assets/images/avatar.png" alt="Mohamed Fouad" class="hero-avatar">
                         <div class="floating-badge badge-1">
                             <span class="badge-number">5+</span>
-                            <span class="badge-text">سنوات خبرة</span>
+                            <span class="badge-text" data-i18n="badge_years">Years Experience</span>
                         </div>
                         <div class="floating-badge badge-2">
-                            <span class="badge-icon"><i class="fas fa-magic"></i></span>
-                            <span class="badge-text">تصميم إبداعي</span>
+                            <span class="badge-icon"><i class="fas fa-bolt"></i></span>
+                            <span class="badge-text" data-i18n="badge_creative">Creative Design</span>
                         </div>
                     </div>
                 </div>
@@ -72,26 +70,23 @@
         <!-- Experience & Services Section -->
         <section id="experience" class="experience-section">
             <div class="container">
-                <span class="sub-title">ماذا أقدم؟</span>
-                <h2 class="section-title">خبراتي وخدماتي</h2>
+                <span class="sub-title" data-i18n="services_subtitle">What I Offer</span>
+                <h2 class="section-title" data-i18n="services_title">Services & Expertise</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon"><i class="fas fa-layer-group"></i></div>
-                        <h3>الهويات البصرية</h3>
-                        <p>تصميم شعارات مبتكرة وكتيبات هوية كاملة (Brand Guidelines) تعزز حضور علامتك التجارية وتثبت في
-                            الأذهان.</p>
+                        <h3 data-i18n="service1_title">Brand Identity</h3>
+                        <p data-i18n="service1_desc">Crafting distinctive logos and comprehensive brand guidelines that establish an iconic market presence and leave a lasting impression.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
-                        <h3>تصاميم السوشيال ميديا</h3>
-                        <p>إنشاء تصاميم لافتة لمنصات التواصل الاجتماعي تتناسب مع هوية شركتك وتساهم في زيادة التفاعل
-                            والمبيعات.</p>
+                        <h3 data-i18n="service2_title">Social Media Design</h3>
+                        <p data-i18n="service2_desc">Designing high-converting, striking visual assets tailored to your brand voice to boost audience engagement and drive sales.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon"><i class="fas fa-video"></i></div>
-                        <h3>الموشن جرافيك والمونتاج</h3>
-                        <p>صناعة فيديوهات إعلانية قصيرة (Reels & Shorts) جذابة باستخدام أحدث تقنيات تحرير الفيديو
-                            وتأثيرات الحركة المميزة.</p>
+                        <h3 data-i18n="service3_title">Motion Graphics & Video</h3>
+                        <p data-i18n="service3_desc">Producing engaging promotional short videos (Reels & Shorts) utilizing modern motion graphics and dynamic video editing.</p>
                     </div>
                 </div>
             </div>
@@ -100,12 +95,20 @@
         <!-- Work/Portfolio Section -->
         <section id="work" class="work-section">
             <div class="container">
-                <span class="sub-title">معرض الأعمال</span>
-                <h2 class="section-title">رؤية فنية تتحول لحقيقة</h2>
+                <span class="sub-title" data-i18n="work_subtitle">Selected Works</span>
+                <h2 class="section-title" data-i18n="work_title">Artistic Vision Brought to Reality</h2>
+
+                <!-- Category Filters -->
+                <div class="portfolio-filters" id="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All Works</button>
+                    <button class="filter-btn" data-filter="branding" data-i18n="filter_branding">Branding</button>
+                    <button class="filter-btn" data-filter="social" data-i18n="filter_social">Social Media</button>
+                    <button class="filter-btn" data-filter="advertising" data-i18n="filter_advertising">Advertising</button>
+                    <button class="filter-btn" data-filter="print" data-i18n="filter_print">Print & Creative</button>
+                </div>
 
                 <div class="portfolio-controls">
-                    <!-- Dynamic filters can be placed here if needed -->
-                    <p class="portfolio-hint">اضغط على أي عمل لتكبيره وتصفحه</p>
+                    <p class="portfolio-hint" data-i18n="work_hint">Click any project to view in high definition</p>
                 </div>
 
                 <div class="work-gallery">
@@ -113,37 +116,51 @@
                         <!-- Dynamic items injected by JS -->
                     </div>
                 </div>
+
+                <!-- Load More / Pagination -->
+                <div class="gallery-actions">
+                    <button id="load-more-btn" class="btn btn-outline" data-i18n="load_more">
+                        <span>Load More Projects</span> <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container">
-                <span class="sub-title">هل لديك مشروع؟</span>
-                <h2 class="section-title">دعنا نعمل معاً</h2>
-                <p class="contact-desc">أنا جاهز دائماً لتحويل أفكارك ورؤيتك إلى تصاميم ملموسة وناجحة. تواصل معي عبر أي
-                    من المنصات التالية:</p>
+                <span class="sub-title" data-i18n="contact_subtitle">Have a Project?</span>
+                <h2 class="section-title" data-i18n="contact_title">Let's Build Something Great</h2>
+                <p class="contact-desc" data-i18n="contact_desc">
+                    Ready to turn your concepts and visions into impactful, high-standard designs. Connect with me directly on any of these platforms:
+                </p>
 
                 <div class="contact-cards">
                     <a href="https://wa.me/967738437313" target="_blank" class="contact-card whatsapp">
                         <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
-                        <h3>واتساب</h3>
+                        <h3 data-i18n="whatsapp_title">WhatsApp</h3>
                         <span class="card-detail">+967 738 437 313</span>
-                        <span class="card-action">راسلني الآن <i class="fas fa-chevron-left"></i></span>
+                        <span class="card-action">
+                            <span data-i18n="whatsapp_action">Start Chat</span> <i class="fas fa-arrow-left arrow-icon"></i>
+                        </span>
                     </a>
 
                     <a href="https://www.behance.net/mohammeal-suba3" target="_blank" class="contact-card behance">
                         <div class="card-icon"><i class="fab fa-behance"></i></div>
-                        <h3>بيهانس</h3>
+                        <h3 data-i18n="behance_title">Behance</h3>
                         <span class="card-detail">mohammeal-suba3</span>
-                        <span class="card-action">مشاهدة المزيد <i class="fas fa-chevron-left"></i></span>
+                        <span class="card-action">
+                            <span data-i18n="behance_action">View Full Profile</span> <i class="fas fa-arrow-left arrow-icon"></i>
+                        </span>
                     </a>
 
                     <a href="mailto:a771581381@gmail.com" class="contact-card email">
                         <div class="card-icon"><i class="fas fa-envelope"></i></div>
-                        <h3>البريد الإلكتروني</h3>
+                        <h3 data-i18n="email_title">Email</h3>
                         <span class="card-detail">a771581381@gmail.com</span>
-                        <span class="card-action">أرسل رسالة <i class="fas fa-chevron-left"></i></span>
+                        <span class="card-action">
+                            <span data-i18n="email_action">Send an Email</span> <i class="fas fa-arrow-left arrow-icon"></i>
+                        </span>
                     </a>
                 </div>
             </div>
@@ -151,21 +168,21 @@
     </main>
 
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 محمد فؤاد | تصميم وتطوير إبداعي</p>
+        <p data-i18n="footer_text">All Rights Reserved &copy; 2026 Mohamed Fouad | Creative Design & Development</p>
     </footer>
 
     <!-- Interactive Lightbox Modal -->
     <div id="lightbox" class="lightbox">
-        <span class="close-lightbox" id="lightbox-close" aria-label="Close Lightbox">&times;</span>
-        <button class="lightbox-nav prev" id="lightbox-prev" aria-label="الصورة السابقة"><i
-                class="fas fa-chevron-right"></i></button>
-        <img class="lightbox-content" id="lightbox-img" alt="معاينة العمل">
-        <button class="lightbox-nav next" id="lightbox-next" aria-label="الصورة التالية"><i
-                class="fas fa-chevron-left"></i></button>
+        <span class="close-lightbox" id="lightbox-close" aria-label="Close">&times;</span>
+        <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="lightbox-media">
+            <img class="lightbox-content" id="lightbox-img" alt="Project Preview">
+        </div>
+        <button class="lightbox-nav next" id="lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
         <div id="lightbox-counter" class="lightbox-counter">1 / 43</div>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js?v=8.0"></script>
 </body>
 
 </html>
